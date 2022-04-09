@@ -16,6 +16,8 @@ export const Nav = styled.nav`
     align-items: center;
     text-decoration: none;
     cursor: pointor;
+    margin-bottom: 1rem;
+  box-shadow: 0px 5px #e9ba23;
   
   
   @media screen and (max-width: 400px){

@@ -2,8 +2,6 @@ import React, {
   useState
 } from 'react'
 import Navbar from '../Navbar'
-import LoginButton from '../LoginButton/index.js'
-import Sidebar from '../Sidebar'
 import {
   HeroContainer,
   HeroContent,
@@ -13,25 +11,20 @@ import {
   HeroBtn
 } from './HeroElements'
 
-
 const Hero = () => {
-  const [isOpen,
-    setIsOpen] = useState(false)
 
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
   return (
 
     <HeroContainer>
-          <Navbar toggle={toggle} />
-          <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar />
+      
           <HeroContent>
             <HeroItems>
-              <HeroH1>Greatest Pizza Ever</HeroH1>
-              <HeroP>Ready in 60 seconds</HeroP>
-              <HeroBtn>Place Order</HeroBtn>
-            <LoginButton />
+             
+              <HeroH1>Happy Birthday Sista</HeroH1>
+              <HeroBtn>RavinaBen Khuman</HeroBtn>
+            
+         
             </HeroItems>
           </HeroContent>
         </HeroContainer>
